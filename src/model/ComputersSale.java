@@ -21,7 +21,7 @@ public class ComputersSale {
 		return comps;
 	}
 	
-	public void sortComputerByBrand() {
+	public void sortByBrand() {
 		for( int i = 1 ; i < comps.length ; i++ ) {
 			for( int j = i ; j > 0 && comps[j - 1].compareTo(comps[j]) > 0 ; j-- ) {
 				Computer cs = comps[j];
@@ -75,7 +75,7 @@ public class ComputersSale {
 			int ram = 1 + random.nextInt(31);
 			int processors = 1 + random.nextInt(7);
 			double processingSpeed = random.nextDouble();
-			char operatingSystem = operativeSystems[random.nextInt(2)];
+			char operatingSystem = operativeSystems[random.nextInt(3)];
 			Computer cs = new Computer(brand, ram, processors, processingSpeed, operatingSystem);
 			computers[i] = cs;
 		}

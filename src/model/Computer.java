@@ -51,12 +51,7 @@ public class Computer implements Comparable<Computer>{
 	@Override
 	public String toString() {
 		String data = "";
-		data += "\nBrand: " + brand;
-		data += "\nRam: " + ram;
-		data += "\nProcessors: " + processors;
-		data += "\nProcessing speed: " + processingSpeed;
-		data += "\nOperating system: " + operatingSystem;
-		data += "\n";
+		data += brand + ", " + operatingSystem + ", " + processors + ", " + ram;
 		return data;
 	}
 	
